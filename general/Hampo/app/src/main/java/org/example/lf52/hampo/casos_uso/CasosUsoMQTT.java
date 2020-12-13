@@ -2,7 +2,8 @@ package org.example.lf52.hampo.casos_uso;
 
 import android.util.Log;
 
-/*public class CasosUsoMQTT implements MqttCallback {
+/*
+public class CasosUsoMQTT implements MqttCallback {
 
     public static MqttClient client = null;
 
