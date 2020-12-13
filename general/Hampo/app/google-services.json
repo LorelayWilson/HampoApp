@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "771706807040",
+    "firebase_url": "https://hampodatabase.firebaseio.com",
+    "project_id": "hampodatabase",
+    "storage_bucket": "hampodatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771706807040:android:3a578aa0581fce5e97c9e5",
+        "android_client_info": {
+          "package_name": "org.example.lf52.hampo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771706807040-16b7410a251sg2stunpsdr4h3evqa6ll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.example.lf52.hampo",
+            "certificate_hash": "9235e47e386dd536335f86a50ba880f93d8554f7"
+          }
+        },
+        {
+          "client_id": "771706807040-vvbk8qt6j0ss6gspln56fijgtvdkpls4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC6eFnooAzgSmEhBndKoHUnWtmu5B_LSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771706807040-vvbk8qt6j0ss6gspln56fijgtvdkpls4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
