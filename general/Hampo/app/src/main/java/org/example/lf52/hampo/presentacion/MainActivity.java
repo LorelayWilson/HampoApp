@@ -1,4 +1,4 @@
-package org.example.lf52.hampo;
+package org.example.lf52.hampo.presentacion;
 
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +15,8 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import org.example.lf52.hampo.R;
 
 public class MainActivity extends AppCompatActivity {
 
