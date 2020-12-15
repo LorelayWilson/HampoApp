@@ -3,24 +3,20 @@ package org.example.lf52.hampo.modelo;
 public class Usuario {
     private String nombre;
     private String correo;
-    private String foto;
-    private String telefono;
     private long inicioSesion;
 
     public Usuario(){
 
     }
 
-    public Usuario(String nombre, String correo, String foto, String telefono, long inicioSesion) {
+    public Usuario(String nombre, String correo, long inicioSesion) {
         this.nombre = nombre;
         this.correo = correo;
-        this.foto = foto;
-        this.telefono = telefono;
         this.inicioSesion = inicioSesion;
     }
 
-    public Usuario (String nombre, String correo, String foto, String telefono) {
-        this(nombre, correo, foto, telefono, System.currentTimeMillis());
+    public Usuario (String nombre, String correo) {
+        this(nombre, correo, System.currentTimeMillis());
     }
 
     public String getNombre() {
@@ -37,22 +33,6 @@ public class Usuario {
 
     public void setCorreo(String correo) {
         this.correo = correo;
-    }
-
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
     }
 
     public long getInicioSesion() {
