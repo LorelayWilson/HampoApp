@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#57bd9e</color>
+    <color name="colorPrimaryDark">#075e54</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorAccent">#E3B176</color>
+    <color name="femaleColor">#F49EB2</color>
+    <color name="maleColor">#8EF6F6</color>
+    <color name="colorAccent2">#E83636</color>
+    <color name="colorAccent3">#e74875</color>
+    <color name="colorIlum">#eed633</color>
+    <color name="colorActi">#debe79</color>
+    <color name="colorFondoHampo">#FFFAEB</color>
+    <color name="colorDetalleMiHampo">#E9E9E9</color>
+    <color name="colorProgresoComidaS">#E3B176</color>
+    <color name="colorProgresoComidaE">#E7C7A8</color>
+    <color name="colorProgresoBebidaS">#6A96D7</color>
+    <color name="colorProgresoBebidaE">#75D6FF</color>
+    <color name="colorProgresoActividadS">#B8D654</color>
+    <color name="colorProgresoActividadE">#C3E359</color>
+
 </resources>
