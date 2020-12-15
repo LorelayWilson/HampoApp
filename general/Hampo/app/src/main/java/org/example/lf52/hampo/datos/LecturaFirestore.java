@@ -20,7 +20,7 @@ public class LecturaFirestore implements LecturaAsinc {
     public void ultimaLectura(String id_jaula, final EscuchadorElemento escuchador) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         String id = Aplicacion.getId();
-        Query lecturas = db.collection(id).document(id_jaula).collection("Lecturas").orderBy("Fecha").limit(1);
+        Query lecturas = db.collection("Hampos").document(id_jaula).collection("Lecturas").orderBy("Fecha").limit(1);
 
         lecturas.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
