@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/noti">
+
+        <SwitchPreference
+            android:key="notificaciones"
+            android:title="@string/noti"
+            android:summary="@string/notiDesc"/>
+        <RingtonePreference
+            android:key="ringtone"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary="@string/cancion" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Otros">
+    <CheckBoxPreference
+        android:key="musica"
+        android:summary="@string/musicaDesc"
+        android:title="@string/musica" />
+
+    <SwitchPreference
+        android:key="tema"
+        android:title="@string/temaOsc"
+        android:summary="@string/temaOscDesc"/>
+
+    <Preference
+        android:key="feedback"
+        android:title="@string/feedback"
+        android:summary="@string/feedbackDesc" />
+        <Preference
+            android:key="privacy"
+            android:title="@string/privacy"></Preference>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

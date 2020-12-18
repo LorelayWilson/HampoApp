@@ -12,4 +12,17 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="nombre_de_usuario">Nombre de usuario</string>
     <string name="correo_electronico">Correo electrónico</string>
+
+    <string name="cancion">Sonido de Notificación</string>
+    <string name="idiomaDesc">Escoge el idioma</string>
+    <string name="idioma">Idioma</string>
+    <string name="temaOscDesc">Activar/Desactivar modo oscuro</string>
+    <string name="temaOsc">Tema oscuro</string>
+    <string name="musicaDesc">Activar/Desactivar música de fondo</string>
+    <string name="musica">Reproducir música</string>
+    <string name="noti">Notificaciones</string>
+    <string name="notiDesc">Activar/Desactivar notificaciones de la aplicación</string>
+    <string name="feedback">Envia feedback</string>
+    <string name="feedbackDesc">Reporta algún fallo</string>
+    <string name="privacy">Privacidad</string>
 </resources>
