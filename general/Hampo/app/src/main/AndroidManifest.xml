@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".presentacion.CustomLoginActivity"
+            android:label="Login"
+            android:theme="@style/Theme.Hampo.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
