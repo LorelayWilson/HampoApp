@@ -65,7 +65,7 @@ public class CustomLoginActivity extends Activity {
 
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))//you can also use R.string.default_web_client_id
+                .requestIdToken("771706807040-vvbk8qt6j0ss6gspln56fijgtvdkpls4.apps.googleusercontent.com")//you can also use R.string.default_web_client_id
                 .requestEmail()
                 .build();
         googleApiClient = new GoogleApiClient.Builder(this)
