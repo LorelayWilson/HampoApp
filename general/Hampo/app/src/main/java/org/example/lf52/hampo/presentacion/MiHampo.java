@@ -96,7 +96,7 @@ public class MiHampo extends AppCompatActivity {
         botonBorrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                lanzarBorrar();
+                confirmacionBorrado();
             }
         });
 
