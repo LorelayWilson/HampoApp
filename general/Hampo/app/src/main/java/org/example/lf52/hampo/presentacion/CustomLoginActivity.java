@@ -74,7 +74,7 @@ public class CustomLoginActivity extends Activity {
     }
 
     public void iniciarSesion(View view) {
-        Log.d(TAG, correo.getText()+"");
+        Log.d(TAG, correo.getText() + "");
         if (correo.getText().toString().isEmpty() || contraseña.getText().toString().isEmpty()) {
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Por favor introduzca un correo y contraseña válido");
@@ -98,8 +98,17 @@ public class CustomLoginActivity extends Activity {
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "signInWithEmail:failure", task.getException());
-                                Toast.makeText(CustomLoginActivity.this, "Authentication failed.",
-                                        Toast.LENGTH_SHORT).show();
+
+                                if ("The password is invalid or the user does not have a password." == task.getException().getMessage()) {
+                                    Snackbar.make(view, "Contraseña incorrecta o el correo no está asignado a ninguna cuenta.", Snackbar.LENGTH_LONG)
+                                            .show();
+                                } else if ("There is no user record corresponding to this identifier. The user may have been deleted." == task.getException().getMessage()) {
+                                    Snackbar.make(view, "Contraseña incorrecta o el correo no está asignado a ninguna cuenta.", Snackbar.LENGTH_LONG)
+                                            .show();
+                                } else {
+                                    Toast.makeText(CustomLoginActivity.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }
                     });
@@ -129,12 +138,21 @@ public class CustomLoginActivity extends Activity {
                                 killActivity();
                             } else {
                                 // If sign in fails, display a message to the user.
-                                Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                                Toast.makeText(CustomLoginActivity.this, "Authentication failed.",
-                                        Toast.LENGTH_SHORT).show();
+                                Log.w(TAG, "createUserWithEmail:failure");
+                                Log.d(TAG, task.getException().getMessage());
+                                if ("The email address is already in use by another account." == task.getException().getMessage()) {
+                                    Snackbar.make(view, "Este correo ya esta registrado", Snackbar.LENGTH_LONG)
+                                            .show();
+                                } else {
+
+                                    Toast.makeText(CustomLoginActivity.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
+
                             }
                         }
                     });
+
         }
     }
 
